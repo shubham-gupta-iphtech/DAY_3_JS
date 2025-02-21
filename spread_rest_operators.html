@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // spreading an array ********************************
+        /*
+        const arr = [1, 2, 3, 4];
+        const arr2 = [5];
+        const result = [...arr, 5];
+
+        console.log(result);
+        */
+
+        
+        // merging two arrays ********************************
+
+        /* const arr1 = [1,2,3,4,5];
+        const arr2 = [6,7,8];
+
+        const merged_array = [...arr1,...arr2];
+
+        console.log(merged_array); */
+
+        // copying an object *********************************
+        
+       /*  const person = { name : "Shubham" , age: 25};
+        const newPerson = {...person, location: "Khalilabad"};
+
+        console.log(newPerson); */
+
+      /*  function sum(...numbers)
+       {
+           return numbers.reduce((acc,num) => acc + num,0);
+
+           
+       }
+
+       console.log(sum(2,2,2,2,2)); */
+       
+       
+
+
+
+
+       //destructuring with rest operators 
+       const[first, ...rest] = [1,2,3,4,5];
+       console.log(first);
+       console.log(rest);
+    
+
+       const colors = ["red", "blue", "green"];
+       const [first, second] = colors;
+       console.log(first);
+       console.log(second);
+           
+      
+      const colors = ["red", "blue", "green"];
+      const [a, ,c] = colors;
+      console.log(a);
+      console.log(c); 
+      
+      //using default values
+      const[x,y=10] = [5];
+      console.log(x);
+    
+ 
+      const example = {name: "Shubham", age:22};
+      const user = {name, age} = example;
+
+      console.log(user.name);
+      console.log(user.age); 
+
+    </script>
+</body>
+
+</html>
